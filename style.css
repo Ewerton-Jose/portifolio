@@ -1,0 +1,76 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  background-color: var(--cor1);
+}
+
+:root {
+  --main_color: "white";
+  --cor1: #43D9D4;
+  --cor2: #43AED9;
+  --cor3: #437FD9;
+  --cor4: #4350D9;
+  --cor5: #6743D9;
+}
+
+header #inicial {
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header #inicial #nome {
+  align-items: center;
+  width: 70%;
+  margin-top: 10px;
+}
+header #inicial #nome h1 {
+  text-align: center;
+  font-size: 3em;
+  color: whitesmoke;
+}
+header #inicial #nome p {
+  margin-top: -15px;
+  color: white;
+  text-align: center;
+}
+header div {
+  background-color: var(--cor4);
+  display: inline-block;
+  text-align: center;
+}
+header img {
+  min-width: 40px;
+  max-width: 250px;
+  min-height: 40px;
+  max-width: 250px;
+  border-radius: 50%;
+}
+header button {
+  min-width: 49vw;
+  padding-right: 100px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--cor2);
+  border: none;
+}
+
+main #soft {
+  background-color: var(--cor1);
+  display: inline-block;
+}
+main #hard {
+  display: inline-block;
+}
+main p {
+  text-align: justify;
+  padding: 10px;
+}
+main h1 {
+  text-align: center;
+}
+main li {
+  max-width: 40px;
+}/*# sourceMappingURL=style.css.map */
