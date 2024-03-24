@@ -48,13 +48,24 @@ header img {
   max-width: 250px;
   border-radius: 50%;
 }
-header button {
+header nav {
+  background-color: var(--cor2);
+}
+header #button1 {
+  min-width: 50vw;
+}
+header #button2 {
   min-width: 49vw;
-  padding-right: 100px;
+  padding-right: 2vw;
+}
+header button {
   display: inline-block;
   text-decoration: none;
   background-color: var(--cor2);
   border: none;
+}
+header button:hover {
+  animation: slidein 3s linear infinite;
 }
 
 main #soft {
@@ -63,6 +74,9 @@ main #soft {
 }
 main #hard {
   display: inline-block;
+}
+main .hidden {
+  display: none;
 }
 main p {
   text-align: justify;
@@ -73,4 +87,16 @@ main h1 {
 }
 main li {
   max-width: 40px;
+}
+
+@keyframes slidein {
+  0% {
+    background-color: #4350D9;
+  }
+  50% {
+    background-color: #a3a5bd;
+  }
+  100% {
+    background-color: #4350D9;
+  }
 }/*# sourceMappingURL=style.css.map */

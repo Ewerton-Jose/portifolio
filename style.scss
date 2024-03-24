@@ -61,14 +61,32 @@ header{
         border-radius: 50%;
     } 
 
+    nav{
+        background-color: var(--cor2);
+        
+    }
+
+    #button1{
+        min-width: 50vw;
+    }
+
+    #button2{
+        min-width: 49vw;
+        padding-right: 2vw;
+    }
 
     button {
-        min-width: 49vw;
-        padding-right: 100px;
+        
         display: inline-block;
         text-decoration: none;
         background-color: var(--cor2);
         border: none;
+
+    }
+    
+    
+    button:hover{
+       animation: slidein 3s linear infinite;
     }
     
 
@@ -85,6 +103,11 @@ main {
         display: inline-block;
     }
 
+    .hidden {
+        display: none;
+    }
+    
+
     p{
         text-align: justify;
         padding: 10px;
@@ -100,5 +123,20 @@ main {
     }
     
     }
-    
 
+// animações
+
+@keyframes slidein {
+    0% {
+        background-color: #4350D9;
+    }
+  
+    50% {
+        background-color:  #a3a5bd;
+    }
+
+    100% {
+        background-color: #4350D9;
+
+    }
+  }

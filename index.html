@@ -13,7 +13,7 @@
         <header> 
             <div id="inicial">
                 <div>
-                    <img class="img-fluid" src="https://mirrors.mit.edu/CTAN/macros/latex/contrib/mwe/example-image-1x1.jpg" alt="Ewerton José">
+                    <img class="img" src="IMG_20240201_152216_464.jpg" alt="Ewerton José">
                 </div>
                 <div id="nome">
                     <h1>Ewerton J. S. Farias</h1>
@@ -21,12 +21,8 @@
                 </div>
             </div>
         <nav>
-            <button> 
-                Sobre mim
-            </button>
-            <button >
-                Meus Principais projetos
-            </button>
+            <button id="button1"> Sobre mim </button>
+            <button id="button2"> Meus Principais projetos </button>
         </nav>
             
 
@@ -34,9 +30,9 @@
 
         <main>
 
-        <article id="soft">
+        <div id="content1">
 
-        <p>Sou um programador com um curso Tecnico em Análise e Desenvolvimento de Sistema na Escola Tecnica Estadual Porto Digital.</p>
+        <p>Sou um programador back-end que atualmente estou cursando Licenciatura na UFRPE um curso Tecnico em Análise e Desenvolvimento de Sistema na Escola Tecnica Estadual Porto Digital.</p>
         <h2>Minhas redes socias</h2>
         
         <ul type="none">
@@ -60,24 +56,35 @@
                 </a>
             </li>
         </ul>
-        </article>
-        <asside id="hard">
+        </div>
+        <div id="content2" class="hidden">
             <h1>Projetos</h1>
     
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veritatis modi ea iusto quia rem exercitationem dolor ipsa autem placeat facere, quo recusandae quam. Accusantium maxime doloribus error numquam quos.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quidem maiores magnam inventore, soluta nesciunt sit. Ducimus, eius atque harum ratione nostrum ad assumenda ipsa deserunt maxime ipsum perspiciatis esse.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sapiente quaerat veritatis. Ducimus modi distinctio provident tempora. Eveniet ea deleniti molestias a nihil, praesentium odit? Nemo quo enim nostrum fuga.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laboriosam. Beatae iste eius, nesciunt harum, laboriosam tempore esse praesentium inventore nulla natus est rerum placeat. Cum explicabo ab saepe repellendus!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident esse amet alias magnam, beatae eius voluptates unde doloremque, id magni cumque. Expedita iure blanditiis sed at, recusandae voluptates eius reprehenderit.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptatem aliquid dicta quidem iure officia fugiat hic. Facere iure vel ea perferendis placeat iste, reprehenderit veritatis at odio laboriosam minus.
-            </p>
-        </asside>
+                Aqui estão meus projetos onde dediquei mais tempo ou que tenho mais carinho sobre eles</p>
+        </div>
     </main>
 
     <footer>
         Site desenvolvido pelo própio Ewerton
     </footer>
-    
+
+    <script>
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+    const content1 = document.getElementById('content1');
+    const content2 = document.getElementById('content2');
+
+    button1.addEventListener('click', function() {
+        content1.classList.remove('hidden');
+        content2.classList.add('hidden');
+  });
+
+  button2.addEventListener('click', function() {
+    content2.classList.remove('hidden');
+    content1.classList.add('hidden');
+  });
+    </script>
+
 </body>
 </html>
