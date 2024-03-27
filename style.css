@@ -85,8 +85,23 @@ main p {
 main h1 {
   text-align: center;
 }
+main ul {
+  text-align: left;
+  -moz-text-align-last: -100px;
+       text-align-last: -100px;
+}
 main li {
   max-width: 40px;
+  padding: 5px;
+  display: inline-block;
+}
+main li img {
+  width: 40px;
+}
+
+.center_main {
+  max-width: 1600px;
+  padding: 20px;
 }
 
 @keyframes slidein {
