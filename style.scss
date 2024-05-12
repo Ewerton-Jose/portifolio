@@ -137,6 +137,16 @@ main {
 .center_main{
     max-width: 1600px;
     padding: 20px;
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    #iclub_img{
+        div {
+            display: inline;
+        }
+    }
 }
 
 // animações

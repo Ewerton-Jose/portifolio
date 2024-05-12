@@ -101,6 +101,12 @@ main li img {
   max-width: 1600px;
   padding: 20px;
 }
+.center_main h2 {
+  margin-top: 20px;
+}
+.center_main #iclub_img div {
+  display: inline;
+}
 
 @keyframes slidein {
   0% {
