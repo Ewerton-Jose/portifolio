@@ -99,6 +99,7 @@ main li img {
 
 .center_main {
   max-width: 1600px;
+  min-height: 800px;
   padding: 20px;
 }
 .center_main h2 {
